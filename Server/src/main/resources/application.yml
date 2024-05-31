@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Server
+  datasource:
+    url: jdbc:mysql://localhost:3306/taxes
+    username: spring_server
+    password: server_pass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+server:
+  error:
+    include-message: always
